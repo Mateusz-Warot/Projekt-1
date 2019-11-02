@@ -1,0 +1,30 @@
+body {
+    background-color: crimson;
+    margin: 0;
+    margin-top: 1%;
+}
+
+header {
+/*Background properties*/
+    background-image: url("https://hhp-blog.s3.amazonaws.com/2018/02/iStock-615737086.jpg");
+    background-color: darkred;
+    background-position: top right;
+/*Font properties*/
+    color: purple;
+    font-size: 2em;
+    text-align: center;
+/*Box properties*/
+    width: 100%;
+    position: fixed;
+    display: block;
+}
+
+nav {
+/*Background properties*/
+/*Font properties*/
+/*Box properties*/
+    width: 12.5%;
+    height: 25%;
+
+}
+
