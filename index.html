@@ -12,7 +12,15 @@
       <link rel="stylesheet" type="text/css" href="style.css">
       <style>
         @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap');
+          header {
+            font-family: 'Bowlby One SC', serif;
+          }
+
           main {
+            font-family: 'Bowlby One SC', serif;
+          }
+          
+          footer {
             font-family: 'Bowlby One SC', serif;
           }
       </style> 
@@ -23,29 +31,46 @@
             <h1>Welcome</h1>
             <h4>In this little part of the internet</h4>
       </header>
+
       <main>
         <!--Left container (navigation)-->
         <nav>
-          <ul class="nav-list">
-            <li>Skills</li>
-            <li>Achievements</li>
-            <li>Contact</li>
-            </ul>
+          <ul class="nav-list list">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
         <!--Center (main information)-->
         <article>
           <!--Skills that I posses-->
-          <section class="skills">
+          <section id="skills">
             <h3>Skills I have to help you</h3>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+              <div class="skills-types">
+                  <div class="icon">
+                    <h4>Graphic</h4>
+                    <img src="https://image.flaticon.com/icons/png/512/95/95019.png" alt="Image">
+                    <h4 id="environment">Ps, GIMP</h4>
+                  </div>
+                  <div class="icon">
+                    <h4>Font End</h4>
+                    <img src="https://image.flaticon.com/icons/png/512/114/114662.png" alt="Font">
+                    <h4 id="environment">HTML, CSS</h4>
+                  </div>
+                  <div class="icon">
+                    <h4>Back End</h4>
+                    <img src="https://image.flaticon.com/icons/png/512/60/60473.png" alt="Settings gears">
+                    <h4 id="environment">PHP, Node.js</h4>
+                  </div>  
+              </div>
           </section>
           <!--Achievements-->
-          <section class="achievements">
+          <section id="achievements">
             <h3>Achivements that may convince you</h3>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
           </section>
           <!--Contact-->
-          <section class="contact">
+          <section id="contact">
             <h3>The ways to contact me</h3>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </section>
@@ -53,11 +78,15 @@
         <!--About me-->
         <aside>
           <h2>About me</h2>
+            <div class="photo">
+            </div>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </aside>
       </main>
+
       <footer>
         <h1>Social media</h1>
       </footer>
+      
     </body>
 </html>
