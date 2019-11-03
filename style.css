@@ -1,3 +1,8 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
 body {
     background-color: crimson;
     margin: 0;
@@ -15,16 +20,76 @@ header {
     text-align: center;
 /*Box properties*/
     width: 100%;
-    position: fixed;
+    height: auto;
+    padding: 3% 0%;
+    position: relative right;
     display: block;
 }
 
 nav {
 /*Background properties*/
+    /*background-color: white;*/
+    
+    
 /*Font properties*/
+    font-size: 1.5em;
 /*Box properties*/
     width: 12.5%;
-    height: 25%;
-
+    height: 28%;
+    margin: 2% 2%;
+    position: fixed;
+    left: 3%;
 }
 
+.nav-list {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list > li {
+    color: chocolate;
+    font-weight: bold;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    list-style-type: none;
+    padding: 10% 2%;
+    text-align: center;
+    background-image: url(https://png2.cleanpng.com/sh/96579bb97169207be9f1282a46c2e898/L0KzQYm3V8A0N5RtepH0aYP2gLBuTgJweJYye9H9dHBxPbz1jCQuepDAed59eT3pgrbsTcVjO5NnfNU6N0HlRLK9Tsk1O2k7TKI8MUW2QIe7Ucg2P2U7Tao3cH7q/kisspng-rope-cotton-knot-royalty-free-5b3bbdc171b4a6.9438640315306418574658.png);
+    background-size: cover;
+}
+
+article {
+/*Background properties*/
+    background-color: darkorchid;
+/*Font properties*/
+/*Box properties*/
+    width: 45%;
+    margin: 2% 2%;
+    padding: 5%;
+    position: relative;
+    display: inline-block;
+}
+
+aside {
+/*Background properties*/
+    background-color: white;
+/*Font properties*/
+    font-size: 1em;
+/*Box properties*/
+    width: 18%;
+    height: 40%;
+    margin: 2% 2%;
+    right: 1%;
+    position: fixed;
+    
+}
+
+footer {
+/*Background properties*/
+    background-color: darkred;
+/*Font properties*/
+    text-align: center;
+/*Box properties*/
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
