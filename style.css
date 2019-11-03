@@ -33,7 +33,8 @@ header {
     position: relative right;
     display: block;
 }
-    /*Navigation*/
+
+/*Navigation*/
 nav {  
     /*Font properties*/
     font-size: 1.5vw;
@@ -135,6 +136,12 @@ textarea {
     max-height: 200px;
 }
 
+#contact-info {
+    background-color: #29194D;
+
+}
+
+/*Buttton*/
 #button {
     background-image: radial-gradient(#BCB3E6, #23194D);
     border: solid rgb(77, 58, 255);
@@ -142,19 +149,19 @@ textarea {
 }
 
 #button:hover {
-    background-color: violet;
-    border: transparent white;
+    background-image: radial-gradient(white, goldenrod);
+    border: solid white;
 }
 
 #button:active {
-    background-color: purple;
+    background-image: radial-gradient(pink , purple);
     border: solid black;
 }
 
 /*Aside*/
 aside {
     /*Background properties*/
-    background-color: rgba(196, 170, 224, 0.842);
+    background-color: #BCB3E6;
     /*Font properties*/
     font-size: 1rem;
     /*Box properties*/
@@ -183,6 +190,7 @@ aside > h2, h3 {
     display: block;
     transition: transform 0.2s;
 }
+
 /*Footer*/
 footer {
     /*Background properties*/
@@ -238,6 +246,7 @@ footer {
     margin: 0;
     padding: 0;
 }
+
 /*Hyperlink Styles*/
 a:link {
     text-decoration: none;
@@ -271,4 +280,20 @@ a:visited {
 
 #insta:hover {
     color: orchid;
+}
+
+/*Animation*/
+
+.container > h2 { 
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes glow {
+    0% {color: silver;}
+    40% {color: goldenrod;}
+    80% {color: white;}
+    100% {color: silver;}
 }
