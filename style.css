@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 main {
     display: flex;
     justify-content: flex-end;
@@ -9,7 +13,7 @@ body {
     margin-top: 0;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     color: silver;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1rem;
 }
 
 /*Header*/
@@ -20,7 +24,7 @@ header {
     background-size: cover;
     /*Font properties*/
     color: #BCB3E6;
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
     /*Box properties*/
     width: 100%;
@@ -116,27 +120,30 @@ article {
 .text {
     width: 50%;
     padding: 2.5%;
-    text-align: left;
-    
 }
 
 .text > label{
     margin: 10% 0;
 }
 
-input.text {
-    width: 50%;
-    margin: 2%;
+input[type=text] {
+    width: 100%;
+    display: block;
 }
 
-textarea.text {
-
+textarea {
+    width: 100%;
+    max-width: 100%;
+    resize: vertical;
+    height: auto;
+    max-height: 60%;
 }
 
 #button {
-    background-color: violet;
-    border: solid black;
-    left: 50%;
+    background-image: radial-gradient(#BCB3E6, #23194D);
+    border: solid rgb(77, 58, 255);
+    right: 0;
+    position: relative;
 }
 
 /*Aside*/
@@ -144,7 +151,7 @@ aside {
     /*Background properties*/
     background-color: rgba(196, 170, 224, 0.842);
     /*Font properties*/
-    font-size: 1em;
+    font-size: 1rem;
     /*Box properties*/
     width: 18%;
     height: 25%;
