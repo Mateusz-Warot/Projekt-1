@@ -122,10 +122,6 @@ article {
     padding: 2.5%;
 }
 
-.text > label{
-    margin: 10% 0;
-}
-
 input[type=text] {
     width: 100%;
     display: block;
@@ -136,14 +132,23 @@ textarea {
     max-width: 100%;
     resize: vertical;
     height: auto;
-    max-height: 60%;
+    max-height: 200px;
 }
 
 #button {
     background-image: radial-gradient(#BCB3E6, #23194D);
     border: solid rgb(77, 58, 255);
-    right: 0;
     position: relative;
+}
+
+#button:hover {
+    background-color: violet;
+    border: transparent white;
+}
+
+#button:active {
+    background-color: purple;
+    border: solid black;
 }
 
 /*Aside*/
