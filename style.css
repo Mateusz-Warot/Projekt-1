@@ -11,6 +11,7 @@ body {
     color: silver;
     letter-spacing: 0.1em;
 }
+
 /*Header*/
 header {
     /*Background properties*/
@@ -58,6 +59,7 @@ nav {
 .nav-list > li:active {
     transform: scale(1.1);
 }
+
 /*Article*/
 article {
     /*Background properties*/
@@ -72,17 +74,24 @@ article {
     border-radius: 10%;
 }
 
-.skills-types {
+.container {
+    margin-bottom: 15%;
+}
+
+/*Skills sections*/
+.skills-box {
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: auto;
-    list-style-position: inside;
-    
+}
+
+.icon {
+    text-align: center;
 }
 
 .icon > img {
-    max-width: 20%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -90,13 +99,46 @@ article {
     margin: 2% 0;
 }
 
-#skills {
-    margin-bottom: 15%;
-}
-
 #environment {
     color: goldenrod;
 }
+
+/*Achievements section*/
+
+/*Contact section*/
+.contact-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    width: 50%;
+    padding: 2.5%;
+    text-align: left;
+    
+}
+
+.text > label{
+    margin: 10% 0;
+}
+
+input.text {
+    width: 50%;
+    margin: 2%;
+}
+
+textarea.text {
+
+}
+
+#button {
+    background-color: violet;
+    border: solid black;
+    left: 50%;
+}
+
 /*Aside*/
 aside {
     /*Background properties*/
@@ -114,7 +156,7 @@ aside {
     border-radius: 5%;
 }
 
-aside > h2 {
+aside > h2, h3 {
     text-align: center;
 }
 
@@ -155,11 +197,16 @@ footer {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+.site:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
 }
 
 .site:nth-child(1) {
     background-image: url("https://image.flaticon.com/icons/png/512/61/61045.png");
-
 }
 
 .site:nth-child(2) {
